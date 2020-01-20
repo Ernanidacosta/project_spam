@@ -1,3 +1,3 @@
 class Enviador:
     def enviar(self, remetente, destinatario, assunto, corpo):
-        pass
+        return 'kakizon@gmail.com'
