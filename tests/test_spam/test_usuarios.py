@@ -4,7 +4,7 @@ from db import Conexao
 from modelos import Usuario
 
 
-@pytest.fixture
+@pytest.fixture(scope='session')
 def conexao():
     conexao_obj = Conexao()
     yield conexao_obj
