@@ -8,9 +8,11 @@ def test_criar_enviador_de_email():
 
 def test_remetente():
     enviador = Enviador()
-    enviador.enviar(
-        'kakizon@gmail.com',
+    destinatario = 'kakizon@gmail.com'
+    resultado = enviador.enviar(
+        destinatario,
         'ernanidacosta@gmail.com',
         'Teste de envio de spam',
         'Se recebeu esse email funciona!'
     )
+    assert destinatario in resultado
