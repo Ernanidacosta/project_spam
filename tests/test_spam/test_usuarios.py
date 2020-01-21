@@ -1,10 +1,5 @@
 from db import Conexao
-
-
-class Usuario:
-    def __init__(self, nome):
-        self.nome = nome
-        self.id = None
+from modelos import Usuario
 
 
 def test_salvar_usuario():
