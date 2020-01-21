@@ -1,10 +1,10 @@
-class Conexao(object):
-    def gerar_sessao(self):
-        pass
+from db import Conexao
 
 
-class Usuario(object):
-    pass
+class Usuario:
+    def __init__(self, nome):
+        self.nome = nome
+        self.id = None
 
 
 def test_salvar_usuario():
@@ -21,10 +21,10 @@ def test_salvar_usuario():
 def test_listar_usuario():
     conexao = Conexao()
     sessao = conexao.gerar_sessao()
-    usuarios = [Usuario(nome='Ernani', Usuario='Rose')]
+    usuarios = [Usuario(nome='Ernani'), Usuario(nome='Rose')]
     for usuario in usuarios:
         sessao.salvar(usuario)
-    assert usuario == sessao.listar()
+    assert usuarios == sessao.listar()
     sessao.roll_back()
     sessao.fechar()
     conexao.fechar()
