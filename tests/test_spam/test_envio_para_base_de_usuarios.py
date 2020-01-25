@@ -25,6 +25,6 @@ def test_quantidade_de_spam(sessao, usuarios):
     enviador_de_spam.enviar_emails(
         'ernanidacosta@gmail.com',
         'Teste envio de spam do PythonPro',
-        'Se recebeu, fuunciona!!'
+        'Se recebeu, funciona!!'
     )
     assert len(usuarios) == enviador.quantidade_email_enviado
