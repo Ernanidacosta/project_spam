@@ -8,16 +8,6 @@ from modelos import Usuario
 from spam.enviador_de_email import Enviador
 
 
-class EnviadorMock(Enviador):
-
-    def __init__(self):
-        super().__init__()
-        self.quantidade_email_enviado = 0
-        self.parametros_de_envio = None
-
-    def enviar(self, remetente, destinatario, assunto, corpo):
-        self.parametros_de_envio = (remetente, destinatario, assunto, corpo)
-        self.quantidade_email_enviado += 1
 
 
 @pytest.mark.parametrize(
