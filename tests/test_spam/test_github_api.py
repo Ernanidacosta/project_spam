@@ -8,7 +8,7 @@ from spam import github_api
 @pytest.fixture
 def avatar_url(mocker):
     resp_mock = Mock()
-    url = 'https://avatars3.githubusercontent.com/u/11460643?v=4'
+    url = "https://avatars3.githubusercontent.com/u/11460643?v=4"
     resp_mock.json.return_value = {
         "login": "Ernanidacosta", "id": 11460643,
         "avatar_url": url,

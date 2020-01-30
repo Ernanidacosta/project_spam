@@ -8,8 +8,6 @@ from modelos import Usuario
 from spam.enviador_de_email import Enviador
 
 
-
-
 @pytest.mark.parametrize(
     "usuarios",
     [
