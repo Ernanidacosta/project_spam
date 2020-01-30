@@ -7,5 +7,5 @@ install:
 script:
   - flake8
   - pytest project_spam --cov=project_spam
-after_sucess:
+after_success:
   - codecov
