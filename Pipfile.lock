@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8d93b0d225e2d300d9a9a1defd5bddc1523ad56a6db6f821bcc1ebefb68206f2"
+            "sha256": "0e503f1034a746dd4b9aa6e0a6d4cc479accafdc3e5adae3ab009daa15160775"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "2.7"
+            "python_version": "3.8"
         },
         "sources": [
             {
@@ -73,7 +73,7 @@
                 "sha256:254c1d9c79f60c45dfde850850883d5aaa7f19a23f13561243a050d5a7c3fe4c",
                 "sha256:c7d282687a5308319bf3d2e7706e575c635b0a470342641c93bea0ea3b5331df"
             ],
-            "markers": "python_version < '3'",
+            "markers": "python_version < '3.2'",
             "version": "==4.0.2"
         },
         "contextlib2": {
